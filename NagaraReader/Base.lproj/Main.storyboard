@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NagaraReader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" ambiguous="YES" text="https://google.co.jp" translatesAutoresizingMaskIntoConstraints="NO" id="u3U-jx-gFW">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KNH-GZ-wgQ"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxv-rD-JX9">
+                                <rect key="frame" x="0.0" y="555" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GB0-Ld-gle"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="&lt;" id="Pxm-gy-pVT">
+                                        <connections>
+                                            <action selector="back:" destination="BYZ-38-t0r" id="U0q-gJ-WQM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="12" style="plain" systemItem="fixedSpace" id="xLW-Qx-GcO"/>
+                                    <barButtonItem title="&gt;" id="3Mc-S6-XRF">
+                                        <connections>
+                                            <action selector="forward:" destination="BYZ-38-t0r" id="quj-MI-hrJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Oc-98-TYP">
+                                <rect key="frame" x="0.0" y="64" width="600" height="491"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u3U-jx-gFW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="FE6-y8-93N"/>
+                            <constraint firstItem="7Oc-98-TYP" firstAttribute="top" secondItem="u3U-jx-gFW" secondAttribute="bottom" id="KhB-20-9OR"/>
+                            <constraint firstItem="u3U-jx-gFW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NQd-M8-iCU"/>
+                            <constraint firstItem="7Oc-98-TYP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OTd-X0-HPb"/>
+                            <constraint firstItem="7Oc-98-TYP" firstAttribute="top" secondItem="u3U-jx-gFW" secondAttribute="bottom" constant="64" id="XX6-U5-0nq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qxv-rD-JX9" secondAttribute="bottom" constant="1" id="Zhw-JM-mND"/>
+                            <constraint firstItem="7Oc-98-TYP" firstAttribute="top" secondItem="u3U-jx-gFW" secondAttribute="bottom" constant="64" id="d6o-CP-yHA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qxv-rD-JX9" secondAttribute="bottom" id="hOz-Q6-gac"/>
+                            <constraint firstItem="u3U-jx-gFW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kJP-eG-rYN"/>
+                            <constraint firstItem="u3U-jx-gFW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qsc-gx-wce"/>
+                            <constraint firstItem="7Oc-98-TYP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="yAa-9q-Eph"/>
+                            <constraint firstItem="qxv-rD-JX9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zEa-fe-nRu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FE6-y8-93N"/>
+                                <exclude reference="kJP-eG-rYN"/>
+                                <exclude reference="XX6-U5-0nq"/>
+                                <exclude reference="d6o-CP-yHA"/>
+                                <exclude reference="Zhw-JM-mND"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="u3U-jx-gFW" id="OBu-k8-9he"/>
+                        <outlet property="webView" destination="7Oc-98-TYP" id="aJW-17-xed"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="445" y="301"/>
         </scene>
     </scenes>
 </document>

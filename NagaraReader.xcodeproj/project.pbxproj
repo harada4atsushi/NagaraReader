@@ -14,6 +14,8 @@
 		7332EB5E1C0A7AD300717C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7332EB5C1C0A7AD300717C21 /* LaunchScreen.storyboard */; };
 		7332EB691C0A7AD300717C21 /* NagaraReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332EB681C0A7AD300717C21 /* NagaraReaderTests.swift */; };
 		7332EB741C0A7AD300717C21 /* NagaraReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332EB731C0A7AD300717C21 /* NagaraReaderUITests.swift */; };
+		7332EB821C0A7C0C00717C21 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7332EB811C0A7C0C00717C21 /* MEMELib.framework */; };
+		7332EB841C0A7C4300717C21 /* MEMELib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7332EB811C0A7C0C00717C21 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7332EB851C0A7C4300717C21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7332EB841C0A7C4300717C21 /* MEMELib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7332EB501C0A7AD300717C21 /* NagaraReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NagaraReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7332EB531C0A7AD300717C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,8 @@
 		7332EB6F1C0A7AD300717C21 /* NagaraReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NagaraReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7332EB731C0A7AD300717C21 /* NagaraReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagaraReaderUITests.swift; sourceTree = "<group>"; };
 		7332EB751C0A7AD300717C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7332EB811C0A7C0C00717C21 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MEMELib.framework; sourceTree = "<group>"; };
+		7332EB861C0A7CF800717C21 /* NagaraReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NagaraReader-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7332EB821C0A7C0C00717C21 /* MEMELib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +96,12 @@
 		7332EB471C0A7AD300717C21 = {
 			isa = PBXGroup;
 			children = (
+				7332EB811C0A7C0C00717C21 /* MEMELib.framework */,
 				7332EB521C0A7AD300717C21 /* NagaraReader */,
 				7332EB671C0A7AD300717C21 /* NagaraReaderTests */,
 				7332EB721C0A7AD300717C21 /* NagaraReaderUITests */,
 				7332EB511C0A7AD300717C21 /* Products */,
+				7332EB861C0A7CF800717C21 /* NagaraReader-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +156,7 @@
 				7332EB4C1C0A7AD300717C21 /* Sources */,
 				7332EB4D1C0A7AD300717C21 /* Frameworks */,
 				7332EB4E1C0A7AD300717C21 /* Resources */,
+				7332EB851C0A7C4300717C21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +215,11 @@
 				TargetAttributes = {
 					7332EB4F1C0A7AD300717C21 = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					7332EB631C0A7AD300717C21 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -399,10 +426,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NagaraReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NagaraReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +445,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NagaraReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NagaraReader-Bridging-Header.h";
 			};
 			name = Release;
 		};
