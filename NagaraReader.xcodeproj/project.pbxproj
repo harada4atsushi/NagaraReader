@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7332EB541C0A7AD300717C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332EB531C0A7AD300717C21 /* AppDelegate.swift */; };
+		7332EB561C0A7AD300717C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332EB551C0A7AD300717C21 /* ViewController.swift */; };
+		7332EB591C0A7AD300717C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7332EB571C0A7AD300717C21 /* Main.storyboard */; };
+		7332EB5B1C0A7AD300717C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7332EB5A1C0A7AD300717C21 /* Assets.xcassets */; };
+		7332EB5E1C0A7AD300717C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7332EB5C1C0A7AD300717C21 /* LaunchScreen.storyboard */; };
+		7332EB691C0A7AD300717C21 /* NagaraReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332EB681C0A7AD300717C21 /* NagaraReaderTests.swift */; };
+		7332EB741C0A7AD300717C21 /* NagaraReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332EB731C0A7AD300717C21 /* NagaraReaderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7332EB651C0A7AD300717C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7332EB481C0A7AD300717C21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7332EB4F1C0A7AD300717C21;
+			remoteInfo = NagaraReader;
+		};
+		7332EB701C0A7AD300717C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7332EB481C0A7AD300717C21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7332EB4F1C0A7AD300717C21;
+			remoteInfo = NagaraReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7332EB501C0A7AD300717C21 /* NagaraReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NagaraReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7332EB531C0A7AD300717C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7332EB551C0A7AD300717C21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7332EB581C0A7AD300717C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7332EB5A1C0A7AD300717C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7332EB5D1C0A7AD300717C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7332EB5F1C0A7AD300717C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7332EB641C0A7AD300717C21 /* NagaraReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NagaraReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7332EB681C0A7AD300717C21 /* NagaraReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagaraReaderTests.swift; sourceTree = "<group>"; };
+		7332EB6A1C0A7AD300717C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7332EB6F1C0A7AD300717C21 /* NagaraReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NagaraReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7332EB731C0A7AD300717C21 /* NagaraReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NagaraReaderUITests.swift; sourceTree = "<group>"; };
+		7332EB751C0A7AD300717C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7332EB4D1C0A7AD300717C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7332EB611C0A7AD300717C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7332EB6C1C0A7AD300717C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7332EB471C0A7AD300717C21 = {
+			isa = PBXGroup;
+			children = (
+				7332EB521C0A7AD300717C21 /* NagaraReader */,
+				7332EB671C0A7AD300717C21 /* NagaraReaderTests */,
+				7332EB721C0A7AD300717C21 /* NagaraReaderUITests */,
+				7332EB511C0A7AD300717C21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7332EB511C0A7AD300717C21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7332EB501C0A7AD300717C21 /* NagaraReader.app */,
+				7332EB641C0A7AD300717C21 /* NagaraReaderTests.xctest */,
+				7332EB6F1C0A7AD300717C21 /* NagaraReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7332EB521C0A7AD300717C21 /* NagaraReader */ = {
+			isa = PBXGroup;
+			children = (
+				7332EB531C0A7AD300717C21 /* AppDelegate.swift */,
+				7332EB551C0A7AD300717C21 /* ViewController.swift */,
+				7332EB571C0A7AD300717C21 /* Main.storyboard */,
+				7332EB5A1C0A7AD300717C21 /* Assets.xcassets */,
+				7332EB5C1C0A7AD300717C21 /* LaunchScreen.storyboard */,
+				7332EB5F1C0A7AD300717C21 /* Info.plist */,
+			);
+			path = NagaraReader;
+			sourceTree = "<group>";
+		};
+		7332EB671C0A7AD300717C21 /* NagaraReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				7332EB681C0A7AD300717C21 /* NagaraReaderTests.swift */,
+				7332EB6A1C0A7AD300717C21 /* Info.plist */,
+			);
+			path = NagaraReaderTests;
+			sourceTree = "<group>";
+		};
+		7332EB721C0A7AD300717C21 /* NagaraReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7332EB731C0A7AD300717C21 /* NagaraReaderUITests.swift */,
+				7332EB751C0A7AD300717C21 /* Info.plist */,
+			);
+			path = NagaraReaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7332EB4F1C0A7AD300717C21 /* NagaraReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7332EB781C0A7AD300717C21 /* Build configuration list for PBXNativeTarget "NagaraReader" */;
+			buildPhases = (
+				7332EB4C1C0A7AD300717C21 /* Sources */,
+				7332EB4D1C0A7AD300717C21 /* Frameworks */,
+				7332EB4E1C0A7AD300717C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NagaraReader;
+			productName = NagaraReader;
+			productReference = 7332EB501C0A7AD300717C21 /* NagaraReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7332EB631C0A7AD300717C21 /* NagaraReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7332EB7B1C0A7AD300717C21 /* Build configuration list for PBXNativeTarget "NagaraReaderTests" */;
+			buildPhases = (
+				7332EB601C0A7AD300717C21 /* Sources */,
+				7332EB611C0A7AD300717C21 /* Frameworks */,
+				7332EB621C0A7AD300717C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7332EB661C0A7AD300717C21 /* PBXTargetDependency */,
+			);
+			name = NagaraReaderTests;
+			productName = NagaraReaderTests;
+			productReference = 7332EB641C0A7AD300717C21 /* NagaraReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7332EB6E1C0A7AD300717C21 /* NagaraReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7332EB7E1C0A7AD300717C21 /* Build configuration list for PBXNativeTarget "NagaraReaderUITests" */;
+			buildPhases = (
+				7332EB6B1C0A7AD300717C21 /* Sources */,
+				7332EB6C1C0A7AD300717C21 /* Frameworks */,
+				7332EB6D1C0A7AD300717C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7332EB711C0A7AD300717C21 /* PBXTargetDependency */,
+			);
+			name = NagaraReaderUITests;
+			productName = NagaraReaderUITests;
+			productReference = 7332EB6F1C0A7AD300717C21 /* NagaraReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7332EB481C0A7AD300717C21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "mofmof inc.";
+				TargetAttributes = {
+					7332EB4F1C0A7AD300717C21 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7332EB631C0A7AD300717C21 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7332EB4F1C0A7AD300717C21;
+					};
+					7332EB6E1C0A7AD300717C21 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7332EB4F1C0A7AD300717C21;
+					};
+				};
+			};
+			buildConfigurationList = 7332EB4B1C0A7AD300717C21 /* Build configuration list for PBXProject "NagaraReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7332EB471C0A7AD300717C21;
+			productRefGroup = 7332EB511C0A7AD300717C21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7332EB4F1C0A7AD300717C21 /* NagaraReader */,
+				7332EB631C0A7AD300717C21 /* NagaraReaderTests */,
+				7332EB6E1C0A7AD300717C21 /* NagaraReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7332EB4E1C0A7AD300717C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7332EB5E1C0A7AD300717C21 /* LaunchScreen.storyboard in Resources */,
+				7332EB5B1C0A7AD300717C21 /* Assets.xcassets in Resources */,
+				7332EB591C0A7AD300717C21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7332EB621C0A7AD300717C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7332EB6D1C0A7AD300717C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7332EB4C1C0A7AD300717C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7332EB561C0A7AD300717C21 /* ViewController.swift in Sources */,
+				7332EB541C0A7AD300717C21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7332EB601C0A7AD300717C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7332EB691C0A7AD300717C21 /* NagaraReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7332EB6B1C0A7AD300717C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7332EB741C0A7AD300717C21 /* NagaraReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7332EB661C0A7AD300717C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7332EB4F1C0A7AD300717C21 /* NagaraReader */;
+			targetProxy = 7332EB651C0A7AD300717C21 /* PBXContainerItemProxy */;
+		};
+		7332EB711C0A7AD300717C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7332EB4F1C0A7AD300717C21 /* NagaraReader */;
+			targetProxy = 7332EB701C0A7AD300717C21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7332EB571C0A7AD300717C21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7332EB581C0A7AD300717C21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7332EB5C1C0A7AD300717C21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7332EB5D1C0A7AD300717C21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7332EB761C0A7AD300717C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7332EB771C0A7AD300717C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7332EB791C0A7AD300717C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NagaraReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7332EB7A1C0A7AD300717C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NagaraReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7332EB7C1C0A7AD300717C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NagaraReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NagaraReader.app/NagaraReader";
+			};
+			name = Debug;
+		};
+		7332EB7D1C0A7AD300717C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NagaraReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NagaraReader.app/NagaraReader";
+			};
+			name = Release;
+		};
+		7332EB7F1C0A7AD300717C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NagaraReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NagaraReader;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7332EB801C0A7AD300717C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NagaraReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mofmof.NagaraReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NagaraReader;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7332EB4B1C0A7AD300717C21 /* Build configuration list for PBXProject "NagaraReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7332EB761C0A7AD300717C21 /* Debug */,
+				7332EB771C0A7AD300717C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7332EB781C0A7AD300717C21 /* Build configuration list for PBXNativeTarget "NagaraReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7332EB791C0A7AD300717C21 /* Debug */,
+				7332EB7A1C0A7AD300717C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7332EB7B1C0A7AD300717C21 /* Build configuration list for PBXNativeTarget "NagaraReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7332EB7C1C0A7AD300717C21 /* Debug */,
+				7332EB7D1C0A7AD300717C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7332EB7E1C0A7AD300717C21 /* Build configuration list for PBXNativeTarget "NagaraReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7332EB7F1C0A7AD300717C21 /* Debug */,
+				7332EB801C0A7AD300717C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7332EB481C0A7AD300717C21 /* Project object */;
+}
